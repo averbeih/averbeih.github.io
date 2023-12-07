@@ -42,21 +42,104 @@
         a:hover {
             color: #ff6600;
         }
+
+        /* 友链模板中的样式 */
+        .links-content {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 45%;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition-duration: 0.15s;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card a {
+            border: none;
+        }
+
+        .card .ava {
+            width: 3rem!important;
+            height: 3rem!important;
+            margin: 0!important;
+            margin-right: 1em!important;
+            border-radius: 4px;
+        }
+
+        .card .card-header {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .card .card-header a {
+            font-weight: bold;
+            color: #2bbc8a;
+            text-decoration: none;
+        }
+
+        .card .card-header a:hover {
+            color: #d480aa;
+        }
+
+        .card .card-header .info {
+            color: #a3a3a3;
+            font-size: 14px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>友情链接</h1>
-        <ul>
-            <li><a href="https://shinichicun.top">Shin</a></li>
-            <li><a href="ctfrookie.top">Liu</a></li>
-            <li><a href="blog.arkeysec.site">arminkey04</a></li>
-            <li><a href="https://dexterjie.github.io/">dexterjie</a></li>
-            <li><a href="https://x1a0yu.fun/">余</a></li>
-            <!-- 剩下的链接按照上面的格式补充 -->
-            <!-- ... -->
-            <li><a href="http://processor.pub/">Processor</a></li>
-        </ul>
+    <!-- 友链模板 -->
+    <div class="links-content">
+        <div class="card">
+            <img class="ava" src="https://weicun.gitee.io/images/logo.png" />
+            <div class="card-header">
+                <div><a href="https://shinichicun.top">Shin</a></div>
+                <div class="info">密码学大爹</div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="ava" src="https://weicun.gitee.io/images/logo.png" />
+            <div class="card-header">
+                <div><a href="https://ctfrookie.top">Liu</a></div>
+                <div class="info">Liu爷</div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="ava" src="https://weicun.gitee.io/images/logo.png" />
+            <div class="card-header">
+                <div><a href="https://blog.arkeysec.site">arminkey04</a></div>
+                <div class="info">arminkey04</div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="ava" src="https://weicun.gitee.io/images/logo.png" />
+            <div class="card-header">
+                <div><a href="https://dexterjie.github.io/">dexterjie</a></div>
+                <div class="info">dexterjie</div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="ava" src="https://weicun.gitee.io/images/logo.png" />
+            <div class="card-header">
+                <div><a href="https://x1a0yu.fun/">余神</a></div>
+                <div class="info">余神</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
