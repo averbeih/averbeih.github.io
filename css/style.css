@@ -3046,6 +3046,8 @@ a.gitment-editor-footer-tip:hover {
 }
 .article-inner {
   position: relative;
+  opacity:0.5;
+  background:#FAEBD7;
   border: 1px solid #2f2f2f;
   margin-bottom: 20px;
   padding-bottom: 20px;
