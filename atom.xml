@@ -6,7 +6,7 @@
   <link href="https://averbeih.github.io/atom.xml" rel="self"/>
   
   <link href="https://averbeih.github.io/"/>
-  <updated>2023-12-07T13:17:33.859Z</updated>
+  <updated>2023-12-12T12:26:23.973Z</updated>
   <id>https://averbeih.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于Diffie-Hellman的公钥加密</title>
+    <link href="https://averbeih.github.io/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/"/>
+    <id>https://averbeih.github.io/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/</id>
+    <published>2023-12-11T16:00:00.000Z</published>
+    <updated>2023-12-12T12:26:23.973Z</updated>
+    
+    <content type="html"><![CDATA[<p>DH密钥交换协议</p><span id="more"></span><p>在那篇划时代的论文《New Directions in Cryptography》中，作者Diffie和Hellman虽然并没有提出一个实际的公钥密码加密算法，但却提出了一个可以在不安全信道中交换密钥的协议，这个密钥交换协议就是基于离散对数难题的。</p><p>Diffie-Hellman密钥交换协议︰</p><p>1.首先通信双方Alice和Bob先共享两个公共参数，模数p和Z<del>p</del>​^*^,中的一个原根g。<br>2. Alice本地随机生成一个私钥a，并计算公钥A &#x3D; g^a^，发送A给Bob<br>3. Bob在收到A后，也本地随机生成一个私钥b，并计算公钥B&#x3D;g^b^，发送B给Alice;此外，Bob还可以计算共享密钥k &#x3D; A^b^ &#x3D; g^ab^<br>4. Alice收到Bob发过来的B后，也可以计算共享密钥k &#x3D; B^a^ &#x3D; g^ab^<br>5．至此，密钥交换结束，双方都可以得到一份共享密钥</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;DH密钥交换协议&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>网络空间技术协会开始纳新啦！！！</title>
@@ -27,26 +44,6 @@
     
     
     <summary type="html">&lt;p&gt;欢迎来到密码学的世界！！！&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://averbeih.github.io/2023/11/30/hello-world/"/>
-    <id>https://averbeih.github.io/2023/11/30/hello-world/</id>
-    <published>2023-11-30T13:23:13.471Z</published>
-    <updated>2023-12-06T01:07:15.984Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to  This is your very first post. Check for more info. If you get any problems when using Hexo, you can find the answer in or you can ask me on</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to  This is your very first post. Check for more info. If you get any problems when using Hexo, you can find the answer in or you</summary>
-      
     
     
     
