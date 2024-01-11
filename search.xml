@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>学习导航</title>
+      <link href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/"/>
+      <url>/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到二进制的世界！！！</p><span id="more"></span>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>安洵杯密码复现</title>
       <link href="/2023/12/24/%E5%AE%89%E6%B4%B5%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/"/>
       <url>/2023/12/24/%E5%AE%89%E6%B4%B5%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/</url>
@@ -21,7 +34,7 @@
       <link href="/2023/12/20/2023%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/"/>
       <url>/2023/12/20/2023%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<span id="more"></span><p><strong>not only rsa</strong><br>task</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import bytes_to_long</span><br><span class="line">from secret import flag</span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line">n = 6249734963373034215610144758924910630356277447014258270888329547267471837899275103421406467763122499270790512099702898939814547982931674247240623063334781529511973585977522269522704997379194673181703247780179146749499072297334876619475914747479522310651303344623434565831770309615574478274456549054332451773452773119453059618433160299319070430295124113199473337940505806777950838270849</span><br><span class="line">e = 641747</span><br><span class="line">m = bytes_to_long(flag)</span><br><span class="line"></span><br><span class="line">flag = flag + os.urandom(n.bit_length() // 8 - len(flag) - 1)</span><br><span class="line">m = bytes_to_long(flag)</span><br><span class="line"></span><br><span class="line">c = pow(m, e, n)</span><br><span class="line"></span><br><span class="line">with open(&#x27;out.txt&#x27;, &#x27;w&#x27;) as f:</span><br><span class="line">    print(f&quot;&#123;n = &#125;&quot;, file=f)</span><br><span class="line">    print(f&quot;&#123;e = &#125;&quot;, file=f)</span><br><span class="line">    print(f&quot;&#123;c = &#125;&quot;, file=f)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>output</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n = 6249734963373034215610144758924910630356277447014258270888329547267471837899275103421406467763122499270790512099702898939814547982931674247240623063334781529511973585977522269522704997379194673181703247780179146749499072297334876619475914747479522310651303344623434565831770309615574478274456549054332451773452773119453059618433160299319070430295124113199473337940505806777950838270849</span><br><span class="line">e = 641747</span><br><span class="line">c = 730024611795626517480532940587152891926416120514706825368440230330259913837764632826884065065554839415540061752397144140563698277864414584568812699048873820551131185796851863064509294123861487954267708318027370912496252338232193619491860340395824180108335802813022066531232025997349683725357024257420090981323217296019482516072036780365510855555146547481407283231721904830868033930943</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
       
       
@@ -35,19 +48,6 @@
       <url>/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/</url>
       
         <content type="html"><![CDATA[<p>在那篇划时代的论文《New Directions in Cryptography》中，作者Diffie和Hellman虽然并没有提出一个实际的公钥密码加密算法，但却提出了一个可以在不安全信道中交换密钥的协议，这个密钥交换协议就是基于离散对数难题的。</p><span id="more"></span><p>Diffie-Hellman密钥交换协议︰</p><p>1.首先通信双方Alice和Bob先共享两个公共参数，模数p和Z<del>p</del>​^*^,中的一个原根g。</p><ol><li>Alice本地随机生成一个私钥a，并计算公钥A &#x3D; g^a^，发送A给Bob</li><li>Bob在收到A后，也本地随机生成一个私钥b，并计算公钥B&#x3D;g^b^，发送B给Alice;此外，Bob还可以计算共享密钥k &#x3D; A^b^ &#x3D; g^ab^</li><li>Alice收到Bob发过来的B后，也可以计算共享密钥k &#x3D; B^a^ &#x3D; g^ab^<br>5．至此，密钥交换结束，双方都可以得到一份共享密钥</li></ol>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网络空间技术协会开始纳新啦！！！</title>
-      <link href="/2023/11/30/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%8A%80%E6%9C%AF%E5%8D%8F%E4%BC%9A%E5%BC%80%E5%A7%8B%E7%BA%B3%E6%96%B0%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/"/>
-      <url>/2023/11/30/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%8A%80%E6%9C%AF%E5%8D%8F%E4%BC%9A%E5%BC%80%E5%A7%8B%E7%BA%B3%E6%96%B0%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-      
-        <content type="html"><![CDATA[<p>欢迎来到密码学的世界！！！</p><span id="more"></span><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hint:74686973206973206D643520426F6F6D21</span><br><span class="line"></span><br><span class="line">6cd29f23de85b1309128ff736c7efbf6</span><br><span class="line">efa4e6f5c6359cc2eadc5d731716468e</span><br><span class="line">408a9c4a79800232ac656249af3162eb</span><br><span class="line">6adff50182df8ad3b836f7fb9dc5c4ab</span><br><span class="line">6ae0af41daeb79509ab3b47b5ed8a687</span><br><span class="line"></span><br><span class="line">key:qwertyuiopasdfghjklzxcvbn</span><br></pre></td></tr></table></figure>]]></content>
       
       
       

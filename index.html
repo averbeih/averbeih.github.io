@@ -310,6 +310,65 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-学习导航" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/" class="article-date">
+      <time datetime="2024-01-11T13:41:36.000Z" itemprop="datePublished">2024-01-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/">学习导航</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>欢迎来到二进制的世界！！！</p>
+          
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+        <p class="article-more-link">
+          <a  href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-安洵杯密码复现" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -396,7 +455,11 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <span id="more"></span>
+<p><strong>not only rsa</strong><br>task</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import bytes_to_long</span><br><span class="line">from secret import flag</span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line">n = 6249734963373034215610144758924910630356277447014258270888329547267471837899275103421406467763122499270790512099702898939814547982931674247240623063334781529511973585977522269522704997379194673181703247780179146749499072297334876619475914747479522310651303344623434565831770309615574478274456549054332451773452773119453059618433160299319070430295124113199473337940505806777950838270849</span><br><span class="line">e = 641747</span><br><span class="line">m = bytes_to_long(flag)</span><br><span class="line"></span><br><span class="line">flag = flag + os.urandom(n.bit_length() // 8 - len(flag) - 1)</span><br><span class="line">m = bytes_to_long(flag)</span><br><span class="line"></span><br><span class="line">c = pow(m, e, n)</span><br><span class="line"></span><br><span class="line">with open(&#x27;out.txt&#x27;, &#x27;w&#x27;) as f:</span><br><span class="line">    print(f&quot;&#123;n = &#125;&quot;, file=f)</span><br><span class="line">    print(f&quot;&#123;e = &#125;&quot;, file=f)</span><br><span class="line">    print(f&quot;&#123;c = &#125;&quot;, file=f)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>output</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n = 6249734963373034215610144758924910630356277447014258270888329547267471837899275103421406467763122499270790512099702898939814547982931674247240623063334781529511973585977522269522704997379194673181703247780179146749499072297334876619475914747479522310651303344623434565831770309615574478274456549054332451773452773119453059618433160299319070430295124113199473337940505806777950838270849</span><br><span class="line">e = 641747</span><br><span class="line">c = 730024611795626517480532940587152891926416120514706825368440230330259913837764632826884065065554839415540061752397144140563698277864414584568812699048873820551131185796851863064509294123861487954267708318027370912496252338232193619491860340395824180108335802813022066531232025997349683725357024257420090981323217296019482516072036780365510855555146547481407283231721904830868033930943</span><br><span class="line"></span><br></pre></td></tr></table></figure>
       
       
     </div>
@@ -482,72 +545,13 @@
 
 
   
-    <article id="post-网络空间技术协会开始纳新啦！！！" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2023/11/30/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%8A%80%E6%9C%AF%E5%8D%8F%E4%BC%9A%E5%BC%80%E5%A7%8B%E7%BA%B3%E6%96%B0%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/" class="article-date">
-      <time datetime="2023-11-30T13:41:36.000Z" itemprop="datePublished">2023-11-30</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/30/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%8A%80%E6%9C%AF%E5%8D%8F%E4%BC%9A%E5%BC%80%E5%A7%8B%E7%BA%B3%E6%96%B0%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/">网络空间技术协会开始纳新啦！！！</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>欢迎来到密码学的世界！！！</p>
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a  href="/2023/11/30/%E7%BD%91%E7%BB%9C%E7%A9%BA%E9%97%B4%E6%8A%80%E6%9C%AF%E5%8D%8F%E4%BC%9A%E5%BC%80%E5%A7%8B%E7%BA%B3%E6%96%B0%E5%95%A6%EF%BC%81%EF%BC%81%EF%BC%81/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
 </div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                &copy; 2023 Crypto0
+                &copy; 2024 Crypto0
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="http://bestwing.me" target="_blank">Sw'blog</a> by Swing
