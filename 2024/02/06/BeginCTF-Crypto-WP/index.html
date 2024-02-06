@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>基于Diffie-Hellman的公钥加密 | Crypto0 (averbeih)</title>
+  <title>BeginCTF Crypto WP | Crypto0 (averbeih)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在那篇划时代的论文《New Directions in Cryptography》中，作者Diffie和Hellman虽然并没有提出一个实际的公钥密码加密算法，但却提出了一个可以在不安全信道中交换密钥的协议，这个密钥交换协议就是基于离散对数难题的。">
+  <meta name="description" content="Crypto">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于Diffie-Hellman的公钥加密">
-<meta property="og:url" content="https://averbeih.github.io/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/index.html">
+<meta property="og:title" content="BeginCTF Crypto WP">
+<meta property="og:url" content="https://averbeih.github.io/2024/02/06/BeginCTF-Crypto-WP/index.html">
 <meta property="og:site_name" content="Crypto0 (averbeih)">
-<meta property="og:description" content="在那篇划时代的论文《New Directions in Cryptography》中，作者Diffie和Hellman虽然并没有提出一个实际的公钥密码加密算法，但却提出了一个可以在不安全信道中交换密钥的协议，这个密钥交换协议就是基于离散对数难题的。">
+<meta property="og:description" content="Crypto">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-12-11T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-12-25T08:02:03.197Z">
+<meta property="article:published_time" content="2024-02-06T15:43:14.000Z">
+<meta property="article:modified_time" content="2024-02-06T16:16:48.114Z">
 <meta property="article:author" content="Crypto0">
 <meta name="twitter:card" content="summary">
   
@@ -309,11 +309,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-基于Diffie-Hellman的公钥加密" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-BeginCTF-Crypto-WP" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/" class="article-date">
-      <time datetime="2023-12-11T16:00:00.000Z" itemprop="datePublished">2023-12-12</time>
+      <a href="/2024/02/06/BeginCTF-Crypto-WP/" class="article-date">
+      <time datetime="2024-02-06T15:43:14.000Z" itemprop="datePublished">2024-02-06</time>
 </a>
     </div>
   
@@ -326,7 +326,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      基于Diffie-Hellman的公钥加密
+      BeginCTF Crypto WP
     </h1>
   
 
@@ -343,15 +343,27 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>在那篇划时代的论文《New Directions in Cryptography》中，作者Diffie和Hellman虽然并没有提出一个实际的公钥密码加密算法，但却提出了一个可以在不安全信道中交换密钥的协议，这个密钥交换协议就是基于离散对数难题的。</p>
+        <p>Crypto</p>
 <span id="more"></span>
-<p>Diffie-Hellman密钥交换协议︰</p>
-<p>1.首先通信双方Alice和Bob先共享两个公共参数，模数p和Z<del>p</del>​^*^,中的一个原根g。</p>
-<ol>
-<li>Alice本地随机生成一个私钥a，并计算公钥A &#x3D; g^a^，发送A给Bob</li>
-<li>Bob在收到A后，也本地随机生成一个私钥b，并计算公钥B&#x3D;g^b^，发送B给Alice;此外，Bob还可以计算共享密钥k &#x3D; A^b^ &#x3D; g^ab^</li>
-<li>Alice收到Bob发过来的B后，也可以计算共享密钥k &#x3D; B^a^ &#x3D; g^ab^<br>5．至此，密钥交换结束，双方都可以得到一份共享密钥</li>
-</ol>
+<p>baby_classic</p>
+<h1 id="task"><a href="#task" class="headerlink" title="task"></a>task</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">from random import *</span><br><span class="line">from string import *</span><br><span class="line">import numpy as np</span><br><span class="line">from secret import plaintext</span><br><span class="line"></span><br><span class="line">ls = ascii_uppercase + &#x27;_.*&#x27;</span><br><span class="line"></span><br><span class="line">def generate_str(length):</span><br><span class="line">    s = &quot;&quot;</span><br><span class="line">    for i in range(length):</span><br><span class="line">        s += choice(ls)</span><br><span class="line">    return s</span><br><span class="line"></span><br><span class="line">def str2mat(s):</span><br><span class="line">    res = np.zeros((len(s) // 6, 6),dtype=int)</span><br><span class="line">    for i in range(0,len(s)):</span><br><span class="line">        res[i // 6, i % 6] = ls.index(s[i])</span><br><span class="line">    return res</span><br><span class="line"></span><br><span class="line">def mat2str(mat):</span><br><span class="line">    s = &quot;&quot;</span><br><span class="line">    for i in range(len(mat) * 6):</span><br><span class="line">        s += ls[mat[i // 6, i % 6]]</span><br><span class="line">    return s</span><br><span class="line"></span><br><span class="line">def encrypt(plaintext,key1,key2):</span><br><span class="line">    mat_plaintext = str2mat(plaintext)</span><br><span class="line">    mat_key1 = str2mat(key1)</span><br><span class="line">    mat_key2 = str2mat(key2)</span><br><span class="line"></span><br><span class="line">    enc_matrix = np.dot(mat_plaintext,mat_key1) % 29</span><br><span class="line">    for i in range(len(enc_matrix)):</span><br><span class="line">        for j in range(len(enc_matrix[i])):</span><br><span class="line">            enc_matrix[i][j] = (enc_matrix[i][j] + mat_key2[0][j]) % 29</span><br><span class="line"></span><br><span class="line">    return mat2str(enc_matrix)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line"></span><br><span class="line">    assert len(plaintext) == 72</span><br><span class="line">    m = generate_str(48)</span><br><span class="line">    key1 = generate_str(36)</span><br><span class="line">    key2 = generate_str(6)</span><br><span class="line">    c = encrypt(m, key1, key2)</span><br><span class="line">    ciphertext = encrypt(plaintext, key1, key2)</span><br><span class="line"></span><br><span class="line">    &#x27;&#x27;&#x27;</span><br><span class="line">    flag = &quot;begin&#123;&quot; + hashlib.md5(plaintext.encode()).hexdigest() + &quot;&#125;&quot;</span><br><span class="line">    &#x27;&#x27;&#x27;</span><br><span class="line"></span><br><span class="line">    print(f&quot;m = &#123;m&#125;&quot;)</span><br><span class="line">    print(f&quot;c = &#123;c&#125;&quot;)</span><br><span class="line">    print(f&quot;ciphertext = &#123;ciphertext&#125;&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line">output:</span><br><span class="line">m = VOWAS*TED.AE_UMLVFV*W*HSSSTZIZZZDAKCLXZKM_E*VR*Y</span><br><span class="line">c = QLOKQGUWMUTGZSDINCQVIVOLISFB_FC.IC_OSPLOBGOVSCZY</span><br><span class="line">ciphertext = MHDTBJSZXLHH.Z.VWGLXUV.SDQUPAMEPNVQVQZX_CBDZHM_IBZRGLJP_YSBDXN.VACLDGCO_</span><br><span class="line">&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><strong>观察代码可以得知原文构造了一个8x6的矩阵</strong><br><strong>密钥是key1为6x6的矩阵，key2是1x6的矩阵</strong><br>所以设一个未知数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">key1=[[x11,x12,x13,x14,x15,x16],</span><br><span class="line">      [x21,x22,x23,x24,x25,x26],</span><br><span class="line">      [x31,x32,x33,x34,x35,x36],</span><br><span class="line">      [x41,x42,x43,x44,x45,x46],</span><br><span class="line">      [x51,x52,x53,x54,x55,x56],</span><br><span class="line">      [x61,x62,x63,x64,x65,x66]]</span><br><span class="line">key2=[y1,y2m,y3,y4,y5,y6]</span><br></pre></td></tr></table></figure>
+<p><em>这里我们把给定的明文和密文也转化为矩阵</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">p=29</span><br><span class="line">m=[[21, 14 ,22  ,0 ,18, 28],</span><br><span class="line"> [19  ,4  ,3 ,27  ,0  ,4],</span><br><span class="line"> [26, 20, 12, 11, 21 , 5],</span><br><span class="line"> [21 ,28 ,22 ,28  ,7, 18],</span><br><span class="line"> [18 ,18 ,19, 25,  8 ,25],</span><br><span class="line"> [25, 25 , 3 , 0, 10, 2],</span><br><span class="line"> [11, 23, 25, 10, 12, 26],</span><br><span class="line"> [ 4 ,28 ,21, 17 ,28, 24]]</span><br><span class="line">c=[[16 ,11, 14 ,10 ,16  ,6],</span><br><span class="line"> [20 ,22, 12 ,20 ,19, 6],</span><br><span class="line"> [25 ,18,  3,  8, 13,  2],</span><br><span class="line"> [16, 21 , 8, 21 ,14 ,11],</span><br><span class="line"> [ 8 ,18 , 5  ,1, 26 , 5],</span><br><span class="line"> [ 2 ,27 , 8  ,2, 26 ,14],</span><br><span class="line"> [18 ,15, 11, 14 , 1 , 6],</span><br><span class="line"> [14 ,21 ,18 , 2 ,25, 24]]</span><br></pre></td></tr></table></figure>
+
+<p><strong>然后我们开始观察加密方式可以得到c&#x3D;m*key1+key2</strong><br>**也就是说我们可以列出8个方程{(m[1][1]*key1[1][1]+m[1][2]<em>key[2][1]+……+m[1][6]<em>key[6][1])+key2}mod29&#x3D;c[1][1]</em></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">f1=m[0][0]*x13+m[0][1]*x23+m[0][2]*x33+m[0][3]*x43+m[0][4]*x53+m[0][5]*x63 - c[0][5] + y3</span><br><span class="line">f2=m[1][0]*x13+m[1][1]*x23+m[1][2]*x33+m[1][3]*x43+m[1][4]*x53+m[1][5]*x63 - c[1][5] + y3</span><br><span class="line">f3=m[2][0]*x13+m[2][1]*x23+m[2][2]*x33+m[2][3]*x43+m[2][4]*x53+m[2][5]*x63 - c[2][5] + y3</span><br><span class="line">f4=m[3][0]*x13+m[3][1]*x23+m[3][2]*x33+m[3][3]*x43+m[3][4]*x53+m[3][5]*x63 - c[3][5] + y3</span><br><span class="line">f5=m[4][0]*x13+m[4][1]*x23+m[4][2]*x33+m[4][3]*x43+m[4][4]*x53+m[4][5]*x63 - c[4][5] + y3</span><br><span class="line">f6=m[5][0]*x13+m[5][1]*x23+m[5][2]*x33+m[5][3]*x43+m[5][4]*x53+m[5][5]*x63 - c[5][5] + y3</span><br><span class="line">f7=m[6][0]*x13+m[6][1]*x23+m[6][2]*x33+m[6][3]*x43+m[6][4]*x53+m[6][5]*x63 - c[6][5] + y3</span><br><span class="line">f8=m[7][0]*x13+m[7][1]*x23+m[7][2]*x33+m[7][3]*x43+m[7][4]*x53+m[7][5]*x63 - c[7][5] + y3</span><br></pre></td></tr></table></figure>
+
+<p><em>由于这是一个带mod的方程，所以考虑使用Gröbner基求未知数</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">#sage</span><br><span class="line">PR.&lt;x13,x23,x33,x43,x53,x63,y3&gt; = PolynomialRing(Zmod(p))</span><br><span class="line"></span><br><span class="line">f1=m[0][0]*x13+m[0][1]*x23+m[0][2]*x33+m[0][3]*x43+m[0][4]*x53+m[0][5]*x63 - c[0][5] + y3</span><br><span class="line">f2=m[1][0]*x13+m[1][1]*x23+m[1][2]*x33+m[1][3]*x43+m[1][4]*x53+m[1][5]*x63 - c[1][5] + y3</span><br><span class="line">f3=m[2][0]*x13+m[2][1]*x23+m[2][2]*x33+m[2][3]*x43+m[2][4]*x53+m[2][5]*x63 - c[2][5] + y3</span><br><span class="line">f4=m[3][0]*x13+m[3][1]*x23+m[3][2]*x33+m[3][3]*x43+m[3][4]*x53+m[3][5]*x63 - c[3][5] + y3</span><br><span class="line">f5=m[4][0]*x13+m[4][1]*x23+m[4][2]*x33+m[4][3]*x43+m[4][4]*x53+m[4][5]*x63 - c[4][5] + y3</span><br><span class="line">f6=m[5][0]*x13+m[5][1]*x23+m[5][2]*x33+m[5][3]*x43+m[5][4]*x53+m[5][5]*x63 - c[5][5] + y3</span><br><span class="line">f7=m[6][0]*x13+m[6][1]*x23+m[6][2]*x33+m[6][3]*x43+m[6][4]*x53+m[6][5]*x63 - c[6][5] + y3</span><br><span class="line">f8=m[7][0]*x13+m[7][1]*x23+m[7][2]*x33+m[7][3]*x43+m[7][4]*x53+m[7][5]*x63 - c[7][5] + y3</span><br><span class="line">Fs = [f1, f2, f3,f4, f5, f6,f7, f8]</span><br><span class="line">I = Ideal(Fs)</span><br><span class="line">B = I.groebner_basis()</span><br><span class="line">t=[]</span><br><span class="line">for b in B:</span><br><span class="line">    assert b.degree() == 1</span><br><span class="line">    mi = ZZ(-b(0, 0, 0,0,0,0,0))</span><br><span class="line">    t.append(mi)</span><br><span class="line">print(t)</span><br></pre></td></tr></table></figure>
+
+<p><strong>所以，根据以上公式，我们可以求出key1，key2</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">key1 = [</span><br><span class="line">    [8, 25, 26, 22, 17, 3],</span><br><span class="line">    [4, 26, 12, 23, 6, 0],</span><br><span class="line">    [16, 20, 16, 20, 2, 16],</span><br><span class="line">    [25, 15, 24, 25, 5, 21],</span><br><span class="line">    [25, 23, 18, 1, 19, 11],</span><br><span class="line">    [22, 26, 1, 13, 22, 23],</span><br><span class="line">]</span><br><span class="line">key2 = [[27, 5, 17, 28, 23, 25]]</span><br></pre></td></tr></table></figure>
+<p><em>手撕密钥成功后我们进行解密操作</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">p = 29</span><br><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line">m = [</span><br><span class="line">    [21, 14, 22, 0, 18, 28],</span><br><span class="line">    [19, 4, 3, 27, 0, 4],</span><br><span class="line">    [26, 20, 12, 11, 21, 5],</span><br><span class="line">    [21, 28, 22, 28, 7, 18],</span><br><span class="line">    [18, 18, 19, 25, 8, 25],</span><br><span class="line">    [25, 25, 3, 0, 10, 2],</span><br><span class="line">    [11, 23, 25, 10, 12, 26],</span><br><span class="line">    [4, 28, 21, 17, 28, 24],</span><br><span class="line">]</span><br><span class="line">c = [</span><br><span class="line">    [16, 11, 14, 10, 16, 6],</span><br><span class="line">    [20, 22, 12, 20, 19, 6],</span><br><span class="line">    [25, 18, 3, 8, 13, 2],</span><br><span class="line">    [16, 21, 8, 21, 14, 11],</span><br><span class="line">    [8, 18, 5, 1, 26, 5],</span><br><span class="line">    [2, 27, 8, 2, 26, 14],</span><br><span class="line">    [18, 15, 11, 14, 1, 6],</span><br><span class="line">    [14, 21, 18, 2, 25, 24],</span><br><span class="line">]</span><br><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line">#sage</span><br><span class="line">ciphertext = [</span><br><span class="line">    [14, 2, 15, 20, 7, 13],</span><br><span class="line">    [20, 20, 6, 12, 13, 11],</span><br><span class="line">    [0, 20, 10, 22, 28, 10],</span><br><span class="line">    [13, 18, 3, 22, 4, 22],</span><br><span class="line">    [5, 11, 3, 16, 6, 16],</span><br><span class="line">    [6, 10, 25, 22, 22, 25],</span><br><span class="line">    [18, 20, 6, 27, 8, 5],</span><br><span class="line">    [5, 20, 19, 13, 3, 12],</span><br><span class="line">    [3, 20, 0, 7, 17, 13],</span><br><span class="line">    [17, 21, 7, 19, 7, 7],</span><br><span class="line">    [25, 8, 10, 22, 6, 6],</span><br><span class="line">    [13, 27, 18, 3, 20, 1],</span><br><span class="line">]</span><br><span class="line">c=matrix(Zmod(p),ciphertext)</span><br><span class="line">key = matrix(Zmod(p),key1)</span><br><span class="line">ls = string.ascii_uppercase + &#x27;_.*&#x27;</span><br><span class="line">def mat2str(mat):</span><br><span class="line">    s = &quot;&quot;</span><br><span class="line">    for i in range(len(mat) * 6):</span><br><span class="line">        s += ls[mat[i // 6][i % 6]]</span><br><span class="line">    return s</span><br><span class="line">m=[[24, 14, 20, 26 ,10, 13],</span><br><span class="line">[14, 22 ,26, 19 , 7 , 4],</span><br><span class="line">[26, 12 ,24 ,18 ,19 , 4],</span><br><span class="line">[17 ,24 ,26 ,14 , 5, 26],</span><br><span class="line">[19 , 7 , 4 ,26 ,12 , 0],</span><br><span class="line">[19 ,17 , 8, 23 ,28 ,28],</span><br><span class="line">[ 1, 20 ,19, 26 ,19 , 7],</span><br><span class="line">[ 8, 18 ,26 , 8 ,18, 26],</span><br><span class="line">[ 1,  4 , 6,  8 ,13, 13],</span><br><span class="line">[ 8 ,13 , 6 ,26 ,14 , 5],</span><br><span class="line">[26 , 2 ,17 ,24, 15, 19],</span><br><span class="line">[14 ,11, 14 , 6 ,24, 27]]</span><br><span class="line">m=mat2str(m)</span><br><span class="line">flag = &quot;begin&#123;&quot; + hashlib.md5(m.encode()).hexdigest() + &quot;&#125;&quot;</span><br><span class="line">print(flag)</span><br></pre></td></tr></table></figure>
+<p><strong>这个小丑解法仅供大家娱乐，看看就好</strong></p>
 
       
       
@@ -361,13 +373,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/">基于Diffie-Hellman的公钥加密</a></p>
+        <p><span>本文标题:</span><a href="/2024/02/06/BeginCTF-Crypto-WP/">BeginCTF Crypto WP</a></p>
         <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
-        <p><span>发布时间:</span>2023年12月12日 - 00时00分</p>
-        <p><span>最后更新:</span>2023年12月25日 - 16时02分</p>
+        <p><span>发布时间:</span>2024年02月06日 - 23时43分</p>
+        <p><span>最后更新:</span>2024年02月07日 - 00时16分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/" title="基于Diffie-Hellman的公钥加密">https://averbeih.github.io/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://averbeih.github.io/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2024/02/06/BeginCTF-Crypto-WP/" title="BeginCTF Crypto WP">https://averbeih.github.io/2024/02/06/BeginCTF-Crypto-WP/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://averbeih.github.io/2024/02/06/BeginCTF-Crypto-WP/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -380,15 +392,11 @@
 
 <nav id="article-nav">
   
-    <a href="/2023/12/20/2023%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          2023强网杯密码复现
-        
-      </div>
-    </a>
   
+    <a href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">学习导航</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -397,7 +405,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#task"><span class="toc-number">1.</span> <span class="toc-text">task</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -447,7 +455,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2023/12/12/基于Diffie-Hellman的公钥加密/" data-title="基于Diffie-Hellman的公钥加密" data-url="https://averbeih.github.io/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/"></div>
+    <div class="ds-thread" data-thread-key="2024/02/06/BeginCTF-Crypto-WP/" data-title="BeginCTF Crypto WP" data-url="https://averbeih.github.io/2024/02/06/BeginCTF-Crypto-WP/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -470,13 +478,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2023/12/20/2023%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/" title="上一篇: 2023强网杯密码复现">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/" title="下一篇: 学习导航">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2024/02/06/BeginCTF-Crypto-WP/">BeginCTF Crypto WP</a></li><li class="post-list-item"><a class="post-list-link" href="/2024/01/11/%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/">学习导航</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/12/24/%E5%AE%89%E6%B4%B5%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/">安洵杯密码复现</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/12/20/2023%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%AF%86%E7%A0%81%E5%A4%8D%E7%8E%B0/">2023强网杯密码复现</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/12/12/%E5%9F%BA%E4%BA%8EDiffie-Hellman%E7%9A%84%E5%85%AC%E9%92%A5%E5%8A%A0%E5%AF%86/">基于Diffie-Hellman的公钥加密</a></li></ul>
